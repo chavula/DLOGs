@@ -1,0 +1,4 @@
+data/
+trained-models/
+.ipynb_checkpoints/
+.DS_Store

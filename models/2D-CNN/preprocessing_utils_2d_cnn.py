@@ -4,8 +4,8 @@ import tensorflow as tf
 from tensorflow.keras.utils import to_categorical
 
 
-DEFAULT_FILE_SUFFIX = "10_10000"  # Dataset with 10 classes, 10000 packets in each
-DEFAULT_DATA_PATH = f"../../data/{DEFAULT_FILE_SUFFIX}"
+DEFAULT_FILE_SUFFIX = "14_10000"  # Dataset with 10 classes, 10000 packets in each
+DEFAULT_DATA_PATH = f"/Users/chiratidzomatowe/DLOGs/preprocessing/data/{DEFAULT_FILE_SUFFIX}"
 MAX_BYTE_VALUE = 255
 
 

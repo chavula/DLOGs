@@ -5,9 +5,8 @@ from sklearn.model_selection import train_test_split
 import logging
 import os
 
-
-CLASSES = ["YouTube", "Facebook", "GoogleServices", "Instagram", "WhatsApp", "BitTorrent",
-           "TeamViewer", "GMail", "Cloudflare", "WindowsUpdate", "PlayStore", "GoogleDocs"]
+#Original file
+CLASSES = ["YouTube", "Amazon", "Facebook", "GoogleServices", "Instagram", "WhatsApp", "NetFlix", "BitTorrent", "TeamViewer", "GMail", "PlayStore", "Messenger", "Pinterest", "Ookla", "WindowsUpdate", "Microsoft", "UbuntuONE", "QUIC"]
 PACKETS_PER_CLASS = 10000
 RANDOM_STATE = 42
 
@@ -18,7 +17,7 @@ logger = logging.getLogger("logger")
 
 # Read in the csv with byte_array - label pairs
 logger.info("Reading in the csv with all packets")
-df = pd.read_csv('./data/data.csv')
+df = pd.read_csv('./../data/data.csv')
 logger.info("Reading csv complete")
 
 # Sample PACKETS_PER_CLASS packets from each class in CLASSES and add to df_new
